@@ -1,5 +1,5 @@
 Speicherungsdauer
 Speicherungsdauer
-Dauer\\s+der\\s+Speicherung
-Geplante\\s+Dauer
+Dauer\s+der\s+Speicherung
+Geplante\s+Dauer
 Aufbewahrungsfristen

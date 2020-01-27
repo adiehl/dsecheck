@@ -1,4 +1,4 @@
 Herkunft der Daten
-Herkunft\\s+der\\s+Daten
+Herkunft\s+der\s+Daten
 Datenquelle
-Ursprung\\s+der\\s+Daten
+Ursprung\s+der\s+Daten
