@@ -1,0 +1,4 @@
+Herkunft der Daten
+Herkunft\\s+der\\s+Daten
+Datenquelle
+Ursprung\\s+der\\s+Daten

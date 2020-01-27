@@ -1,0 +1,3 @@
+Automatisierte Entscheidung
+Automatisierte\\s+Entscheidung
+automatisierte\\s+Beurteilung
