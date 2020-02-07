@@ -43,7 +43,12 @@ export class AppComponent implements OnInit {
     let worked = true;
     while (worked) {
       try {
-        const content: string = await this.http.get(`assets/${counter}.txt`, {responseType: 'text'}).toPromise();
+        const content: string = await this.http.get(`assets/${counter}.txt`,
+          {
+            responseType: 'text',
+            headers: {'Cache-Control': 'no-cache'}
+          },
+          ).toPromise();
         const checks = content.split('\n');
         console.log(checks);
         const checkName = checks.shift();
