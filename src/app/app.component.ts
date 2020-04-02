@@ -31,17 +31,23 @@ export class AppComponent implements OnInit {
   async doChecks() {
     this.resetChecks();
     for (const currentCheck of this.checks) {
+      let line = 0;
       for (const row of this.gdprcontent.split('\n')) {
+        line++;
         console.log('Checking row: ' + row);
         for (const check of currentCheck.checks) {
           console.log('Check: ' + check);
           const regex = new RegExp(`${check}`, 'i');
           if (row.match(regex)) {
             currentCheck.success = true;
-            currentCheck.contents.push(row);
+            currentCheck.contents.push('Z' + line.toString() + ': ' + row);
             continue;
           }
         }
+      }
+      // no positive result -> negative
+      if (currentCheck.success === null) {
+        currentCheck.success = false;
       }
     }
   }
