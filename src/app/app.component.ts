@@ -18,10 +18,18 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit() {
+    await this.loadChecks();
+  }
+
+  async resetChecks() {
+    for (const currentCheck of this.checks) {
+      currentCheck.contents = [];
+      currentCheck.success = null;
+    }
   }
 
   async doChecks() {
-    await this.loadChecks();
+    this.resetChecks();
     for (const currentCheck of this.checks) {
       for (const row of this.gdprcontent.split('\n')) {
         console.log('Checking row: ' + row);
@@ -58,7 +66,7 @@ export class AppComponent implements OnInit {
         const checkObj = {
           name: checkName,
           contents: [],
-          success: false,
+          success: null,
           checks: checks
         };
         this.checks.push(checkObj);

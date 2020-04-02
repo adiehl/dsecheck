@@ -286,44 +286,92 @@
   }
 </style>
 
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img
-    width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
-  <span>Datenschutzerklärung Checker</span>
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Datenschutzerklärung Checker</a>
+</nav>
 
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-md-block bg-light sidebar-sticky">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Checker <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
 
-<div class="content" role="main">
-  <label for="gdprtext">Hier Text einfügen</label>
-  <br />
-  <textarea id="gdprtext" class="" style="width: 100%; height: 250px;" (change)="contentChanged($event)" ></textarea>
-  <br />
-  <div class="card card-small" (click)="doChecks()" tabindex="0">
-    <span>Text prüfen</span>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Gespeichert</span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+
+      <label for="gdprtext">Hier Text einfügen</label>
+      <br />
+      <textarea id="gdprtext" class="" style="width: 100%; height: 250px;" (change)="contentChanged($event)" ></textarea>
+      <br />
+      <div class="btn btn-primary" (click)="doChecks()" tabindex="0">
+        <span>Text prüfen</span>
+      </div>
+
+
+
+      <h2>Aktuelle Prüfung</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Prüfung</th>
+            <th>Ergebnis</th>
+            <th>Textstellen</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let check of checks">
+            <td>?</td>
+            <td *ngIf='check.success === true' class="alert-success">
+              <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+              </svg>
+            </td>
+            <td *ngIf='check.success === false' class="alert-danger">
+              <svg class="bi bi-exclamation-triangle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M7.938 2.016a.146.146 0 00-.054.057L1.027 13.74a.176.176 0 00-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 00.066-.017.163.163 0 00.055-.06.176.176 0 00-.003-.183L8.12 2.073a.146.146 0 00-.054-.057A.13.13 0 008.002 2a.13.13 0 00-.064.016zm1.044-.45a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" clip-rule="evenodd"/>
+                <path d="M7.002 12a1 1 0 112 0 1 1 0 01-2 0zM7.1 5.995a.905.905 0 111.8 0l-.35 3.507a.552.552 0 01-1.1 0L7.1 5.995z"/>
+              </svg>
+            </td>
+            <td *ngIf='check.success === null' class="alert-secondary">
+              <svg class="bi bi-question" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg>
+            </td>
+            <td>{{ check.name }}</td>
+            <td><p *ngIf="check.contents.length === 0">(keine)</p><p *ngFor="let content of check.contents">{{ content }}</p></td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
   </div>
-
-  <!-- Checks -->
-  <div class="card-container">
-    <ol>
-      <li *ngFor="let check of checks">
-        <span *ngIf='check.success' style="color: green">VORHANDEN: </span>
-        <span *ngIf='!check.success' style="color: red">FEHLT: </span>
-        {{ check.name }}
-          <p *ngFor="let content of check.contents">{{ content }}</p>
-      </li>
-    </ol>
-
-  </div>
-
-
-
-
 </div>
-
 
 
 <router-outlet></router-outlet>
