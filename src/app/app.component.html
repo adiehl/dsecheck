@@ -11,13 +11,29 @@
         <label for="gdprtext">Hier Text einfügen</label>
         <textarea id="gdprtext" class="form-control" rows="10" (change)="contentChanged($event)" ></textarea>
       </div>
-      <div class="btn btn-primary" (click)="doChecks()" tabindex="0">
-        <span>Text prüfen</span>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <div class="btn btn-primary" (click)="doChecks()" tabindex="0" id="submitButton" *ngIf="!checkRunning">
+              <span>Text prüfen</span>
+            </div>
+            <div class="btn btn-secondary" disabled="disabled" tabindex="0" *ngIf="checkRunning">
+              <span>Text prüfen</span>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col" id="loader" *ngIf="checkRunning">
+          Bitte warten <img src="assets/img/ajax-loader.gif" />
+        </div>
       </div>
 
 
-
       <h2>Aktuelle Prüfung</h2>
+      <div *ngIf="gesamtnote != null">
+        Gesamtnote: {{ gesamtnote }}
+      </div>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>

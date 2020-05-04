@@ -1,4 +1,7 @@
 Recht auf Löschung
-Recht\s+auf\s+Löschung
+Recht\s+auf.+Löschung
 Recht\s+auf\s+Vergessenwerden
 Löschungsanspruch
+Datenlöschung
+Recht auf Berichtigung, Löschung
+Löschung\s+Ihrer\s+Daten

@@ -3,3 +3,6 @@ Speicherungsdauer
 Dauer\s+der\s+Speicherung
 Geplante\s+Dauer
 Aufbewahrungsfristen
+Speicherdauer
+Aufbewahrungspflicht
+Dauer\s+der\s+Datenspeicherung

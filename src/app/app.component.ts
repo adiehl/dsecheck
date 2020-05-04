@@ -9,8 +9,10 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent implements OnInit {
   title = 'dsecheck';
   gdprcontent = '';
+  checkRunning = false;
   checks = [
   ];
+  gesamtnote = null;
   constructor(private http: HttpClient) { }
   contentChanged(event) {
     this.gdprcontent = event.target.value;
@@ -29,7 +31,10 @@ export class AppComponent implements OnInit {
   }
 
   async doChecks() {
+    this.checkRunning = true;
+    this.gesamtnote = null;
     this.resetChecks();
+    var note = 6;
     for (const currentCheck of this.checks) {
       let line = 0;
       for (const row of this.gdprcontent.split('\n')) {
@@ -49,7 +54,12 @@ export class AppComponent implements OnInit {
       if (currentCheck.success === null) {
         currentCheck.success = false;
       }
+      if (currentCheck.success) {
+        note -= 5 / this.checks.length;
+      }
     }
+    this.checkRunning = false;
+    this.gesamtnote = Math.round(note);
   }
   async loadChecks() {
     this.checks = [];

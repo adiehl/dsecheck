@@ -2,3 +2,6 @@ Herkunft der Daten
 Herkunft\s+der\s+Daten
 Datenquelle
 Ursprung\s+der\s+Daten
+Herkunft\s+Ihrer\s+Daten
+Herkunft\s+von\s+Daten
+Alle\s+Daten\s+stammen\s+aus\s+Ihrem\s+Auftrag

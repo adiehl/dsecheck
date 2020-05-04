@@ -2,3 +2,6 @@ Verarbeitungszwecke
 Verarbeitungszwecke
 Zwecke\s+der\s+Verarbeitung
 Grund\s+der\s+Verarbeitung
+folgenden\s+Zwecken\s+verwenden
+Nutzung\s+von\s+Daten
+Verarbeitung\s+der\s+Daten\s+für\s+Zwecke
