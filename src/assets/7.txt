@@ -3,4 +3,4 @@ Einschränkung\s+der\s+Verarbeitung
 Recht\s+auf\s+Einschränkung
 Einschränkungsrecht
 Einschränkung
-Art.\s+18\
+Art.\s+18

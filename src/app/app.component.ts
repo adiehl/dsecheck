@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
           if (row.match(regex)) {
             currentCheck.success = true;
             currentCheck.contents.push('Z' + line.toString() + ': ' + row);
-            continue;
+            break;
           }
         }
       }
