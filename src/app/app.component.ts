@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
         note -= 5 / this.checks.length;
       }
     }
-    this.gesamtnote = Math.round(note * 10) / 10;
+    this.gesamtnote = Math.round(note);
   }
 
   async doChecks() {
@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
       }
     }
     this.checkRunning = false;
-    this.gesamtnote = Math.round(note * 10) / 10;
+    this.gesamtnote = Math.round(note);
   }
   async loadChecks() {
     this.checks = [];
@@ -99,7 +99,7 @@ export class AppComponent implements OnInit {
           name: checkName,
           contents: [],
           success: null,
-          checks: checks
+          checks
         };
         this.checks.push(checkObj);
         console.log(checkObj);
