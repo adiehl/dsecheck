@@ -1,7 +1,7 @@
-Herkunft der Daten
-Herkunft\s+der\s+Daten
-Datenquelle
-Ursprung\s+der\s+Daten
-Herkunft\s+Ihrer\s+Daten
-Herkunft\s+von\s+Daten
-Alle\s+Daten\s+stammen\s+aus\s+Ihrem\s+Auftrag
+Art. 15 Abs. 1 lit. f DSGVO: Recht auf Beschwere bei einer Aufsichtsbehörde
+77\s+DSGVO
+Art.\s+77
+Aufsichtsbehörde
+Beschwerde
+Beschwerderecht
+Recht\s+auf\s+Beschwerde

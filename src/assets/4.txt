@@ -1,4 +1,19 @@
-Recht auf Berichtigung
-Recht\s+auf\s+Berichtigung
-Recht\s+auf\s+Korrektur
-Berichtigung.*Art.\s+16
+Art. 15 Abs. 1 lit. d DSGVO: Speicherungsdauer
+Aufbewahrungsfristen
+Aufbewahrungspflicht
+Datenaufbewahrung
+Dauer
+Dauer\s+der\s+Datenspeicherung
+Dauer\s+der\s+Speicherung
+Dauer,\s+für\s+die\s+die\s+personenbezogenen\s+Daten\s+gespeichert\s+werden
+Geplante\s+Dauer
+gespeichert
+Kriterien\s+für\s+die\s+Festlegung\s+der\s+Dauer
+Kriterien\s+für\s+die\s+Festlegung\s+dieser\s+Dauer
+solange\s+gespeichert
+Speicherdauer
+Speicherungsdauer
+Wie\s+lange\s+speichen\s+wir\s+Ihre\s+Daten
+Wie\s+lange\s+speichern\s+wir\s+Deine\s+Daten
+Wie\s+lange\s+werden\s+Ihre\s+Daten\s+gespeichert
+Wie\s+lange\s+werden\s+meine\s+Daten\s+gespeichert

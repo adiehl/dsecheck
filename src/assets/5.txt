@@ -1,7 +1,7 @@
-Recht auf Löschung
-Recht\s+auf.+Löschung
-Recht\s+auf\s+Vergessenwerden
-Löschungsanspruch
-Datenlöschung
-Recht auf Berichtigung, Löschung
-Löschung\s+Ihrer\s+Daten
+Art. 15 Abs. 1 lit. e DSGVO: Recht auf Berichtigung
+Art.\s+16
+berichtigen
+Berichtigung
+Berichtigungs-
+Recht\s+auf\s+Berichtigung
+Recht\s+auf\s+Korrektur

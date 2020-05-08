@@ -1,7 +1,14 @@
-Verarbeitungszwecke
-Verarbeitungszwecke
-Zwecke\s+der\s+Verarbeitung
-Grund\s+der\s+Verarbeitung
+Art. 15 Abs. 1 lit. a DSGVO: Verarbeitungszwecke
 folgenden\s+Zwecken\s+verwenden
+Gründe\s+der\s+Verarbeitung
+Grund\s+der\s+Verarbeitung
 Nutzung\s+von\s+Daten
 Verarbeitung\s+der\s+Daten\s+für\s+Zwecke
+Verarbeitungszweck
+Wofür\s+verarbeiten\s+wir\s+Ihre\s+Daten
+Wozu\s+brauchen\s+wir\s+deine\s+Daten
+Wozu\s+brauchen\s+wir\s+Deine\s+Daten
+Wozu\s+brauchen\s+wir\s+Ihre\s+Daten
+Zweck
+Zwecke\s+der\s+Verarbeitung
+Zweck\s+der\s+Verarbeitung

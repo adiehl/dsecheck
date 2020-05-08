@@ -1,5 +1,9 @@
-Kategorien von Empfängern
-Kategorien\s+von\s+Empfängern
-Empfänger
-Empfängern
-Weitergabe\s+von\s+Daten
+Art. 15 Abs. 1 lit. b DSGVO: Kategorien von Daten
+Datenkategorie
+Daten-Kategorien
+Daten,\s+die\s+wir\s+von\s+Ihnen\s+verarbeiten
+Ihre\s+personenbezogenen\s+Daten
+Kategorien\s+der\s+personenbezogenen\s+Daten
+Kategorien\s+personenbezogener\s+Daten
+Kategorien\s+von\s+Daten
+Kategorien\s+von\s+personenbezogenen\s+Daten

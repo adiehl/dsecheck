@@ -1,4 +1,0 @@
-Kategorien von Daten
-Kategorien\s+von\s+Daten
-Kategorien\s+der\s+personenbezogenen\s+Daten
-Kategorien\s+personenbezogener\s+Daten

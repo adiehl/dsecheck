@@ -1,4 +1,7 @@
-Beschwerderecht
-Recht\s+auf\s+Beschwerde
-Beschwerderecht
-Aufsichtsbehörde
+Art. 15 Abs. 1 lit. e DSGVO: Recht auf Löschung
+Recht\s+auf.+Löschung
+Recht\s+auf\s+Vergessenwerden
+Löschungsanspruch
+Datenlöschung
+Recht\s+auf\s+Berichtigung,\s+Löschung
+Löschung\s+Ihrer\s+Daten
