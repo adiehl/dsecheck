@@ -1,13 +1,7 @@
-Art. 15 Abs. 1 lit. h DSGVO: Automatisierte Entscheidung
-automatisierten\s+Entscheidungsfindung
-automatisierte\s+Beurteilung
-automatisierte\s+Entscheidung
-Automatisierte\s+Entscheidung
-automatisierte\s+Entscheidungsfindung
-Automatisierte\s+Entscheidungsfindung
-Bonitätsnoten
-Profilbildung
-Profiling
-Profilings
-Rating
-Scoring
+Art. 15 Abs. 1 lit. f DSGVO: Recht auf Beschwere bei einer Aufsichtsbehörde
+77\s+DSGVO
+Art.\s+77
+Aufsichtsbehörde
+Beschwerde
+Beschwerderecht
+Recht\s+auf\s+Beschwerde

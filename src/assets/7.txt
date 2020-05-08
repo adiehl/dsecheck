@@ -1,7 +1,6 @@
-Art. 15 Abs. 1 lit. f DSGVO: Recht auf Beschwere bei einer Aufsichtsbehörde
-77\s+DSGVO
-Art.\s+77
-Aufsichtsbehörde
-Beschwerde
-Beschwerderecht
-Recht\s+auf\s+Beschwerde
+Art. 15 Abs. 1 lit. e DSGVO: Recht auf Einschränkung
+Einschränkung\s+der\s+Verarbeitung
+Recht\s+auf\s+Einschränkung
+Einschränkungsrecht
+Einschränkung
+Art.\s+18\

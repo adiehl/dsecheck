@@ -30,11 +30,27 @@ export class AppComponent implements OnInit {
     }
   }
 
+  toggle(check) {
+    if (!check.success) {
+      check.success = true;
+    } else {
+      check.success = false;
+    }
+    let note = 6;
+    // rerun calculation
+    for (const currentCheck of this.checks) {
+      if (currentCheck.success) {
+        note -= 5 / this.checks.length;
+      }
+    }
+    this.gesamtnote = Math.round(note * 10) / 10;
+  }
+
   async doChecks() {
     this.checkRunning = true;
     this.gesamtnote = null;
     this.resetChecks();
-    var note = 6;
+    let note = 6;
     for (const currentCheck of this.checks) {
       let line = 0;
       for (const row of this.gdprcontent.split('\n')) {
@@ -59,7 +75,7 @@ export class AppComponent implements OnInit {
       }
     }
     this.checkRunning = false;
-    this.gesamtnote = Math.round(note);
+    this.gesamtnote = Math.round(note * 10) / 10;
   }
   async loadChecks() {
     this.checks = [];

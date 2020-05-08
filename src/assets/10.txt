@@ -1,7 +1,10 @@
-Art. 15 Abs. 2 DSGVO: Übermittlung an Drittland
-Art.\s+46
-Drittland
-Drittländer
-Garantien
-Übermittlungen\s+an\s+Drittländer
-Übermittlung\s+in\s+Drittländer
+Art. 15 Abs. 1 lit. g DSGVO: Herkunft der Daten
+Alle\s+Daten\s+stammen\s+aus\s+Ihrem\s+Auftrag
+Datenquelle
+Herkunft\s+der\s+Daten
+Herkunft\s+Ihrer\s+Daten
+Herkunft\s+von\s+Daten
+Ursprung\s+der\s+Daten
+von\s+Ihnen
+Wo\s+kommen\s+deine\s+Daten\s+her
+Wo\s+kommen\s+Ihre\s+Daten\s+her
